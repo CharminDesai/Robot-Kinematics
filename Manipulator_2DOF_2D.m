@@ -52,5 +52,3 @@ fprintf('--------------------------------------------------------------\n')
 fprintf('Position of L2 in FRAME0, after joint2 rotation = H01*L2_F1')
 P2 = H01*L2_F1
 
-plot(P1(1),P1(2))
-
