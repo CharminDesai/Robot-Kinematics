@@ -3,22 +3,22 @@ clc
 
 % FORWARD KINEMATICS CALCULATOR/EXPERIMENTATION
 
+% Know the coordinates of a point after homogeneous transformation
+
 fprintf('\nInitial Point =')
-P1 = [4;3;0;1] 
+P = [0.3;0;0;1] 
 
 fprintf('Angle of Rotation =')
-theta1 = 90                                                               
+theta = 0                                                               
 
-Tx1 = 0;
-Ty1 = 0;
-Tz1 = 0;
+fprintf('Translation Lengths in x,y,z directions =')
+Tx = 0.1
+Ty = 0
+Tz = 0.2
 
 fprintf('Homogeneous Transformation Matrix for rotation around Z axis')
-H01 = [cosd(theta1) -sind(theta1) 0 Tx1; sind(theta1) cosd(theta1) 0 Ty1; 0 0 1 Tz1; 0 0 0 1]
+HT = [cosd(theta) -sind(theta) 0 Tx; sind(theta) cosd(theta) 0 Ty; 0 0 1 Tz; 0 0 0 1]
 
-fprintf('\nCoordinates of P1 after Homogeneous Transformation')
-P1_H = H01*P1   
-
-
-
+fprintf('\nCoordinates of P after Homogeneous Transformation')
+P_HT = HT*P 
 
