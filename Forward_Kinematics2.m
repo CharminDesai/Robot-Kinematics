@@ -6,15 +6,15 @@ clc
 % Know the coordinates of a point after homogeneous transformation
 
 fprintf('\nInitial Point =')
-P = [0.3;0;0;1] 
+P = [3;0;0;1] 
 
 fprintf('Angle of Rotation =')
 theta = 0                                                               
 
 fprintf('Translation Lengths in x,y,z directions =')
-Tx = 0.1
+Tx = 1
 Ty = 0
-Tz = 0.2
+Tz = 2
 
 fprintf('Homogeneous Transformation Matrix for rotation around Z axis')
 HT = [cosd(theta) -sind(theta) 0 Tx; sind(theta) cosd(theta) 0 Ty; 0 0 1 Tz; 0 0 0 1]
